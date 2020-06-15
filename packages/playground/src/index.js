@@ -1,5 +1,6 @@
 import React from "react";
 import { Theme as MuiTheme } from "@rjsf/material-ui";
+import { Theme as B4Theme } from "../../bootstrap-4";
 import Playground from "./app";
 import { render } from "react-dom";
 
@@ -86,6 +87,10 @@ const themes = {
   "material-ui": {
     stylesheet: "",
     theme: MuiTheme,
+  },
+  "bootstrap-4": {
+    stylesheet: "",
+    theme: B4Theme,
   },
 };
 
