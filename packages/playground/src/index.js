@@ -89,7 +89,8 @@ const themes = {
     theme: MuiTheme,
   },
   "bootstrap-4": {
-    stylesheet: "",
+    stylesheet:
+      "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
     theme: B4Theme,
   },
 };
