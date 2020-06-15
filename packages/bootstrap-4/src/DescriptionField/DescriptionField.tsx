@@ -1,25 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { FieldProps } from '@rjsf/core';
+interface DescriptionField {
+  description?: string;
+  classes?: string;
+}
 
-import { makeStyles } from '@material-ui/styles';
-import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles({
-  root: {
-    marginTop: 5,
-  },
-});
-
-const DescriptionField = ({ description }: FieldProps) => {
+const DescriptionField = ({ description, classes }: DescriptionField) => {
   if (description) {
-    const classes = useStyles();
-
-    return (
-      <Typography variant="subtitle2" className={classes.root}>
-        {description}
-      </Typography>
-    );
+    return <h2 className={classes}>{description}</h2>;
   }
 
   return null;
