@@ -29,19 +29,19 @@ const RadioWidget = ({
     target: { value },
   }: React.FocusEvent<HTMLInputElement>) => onFocus(id, value);
 
-  const inline = options.inline !== null ? options.inline : false;
+  const inline = Boolean(options && options.inline);
 
   return (
     <Form.Group controlId={id} className="mb-0">
       <Form.Label className="d-block">{label || schema.title}</Form.Label>
       {(enumOptions as any).map((option: any, i: number) => {
         const itemDisabled =
-          enumDisabled && (enumDisabled as any).indexOf(option.value) != -1;
+          Array.isArray(enumDisabled) && enumDisabled.indexOf(option.value) !== -1;
         const checked = option.value === value;
         const radio = (
           <Form.Check
-            inline={inline as boolean}
-            label={`${option.label}`}
+            inline={inline}
+            label={option.label}
             key={i}
             type="radio"
             disabled={disabled || itemDisabled || readonly}
