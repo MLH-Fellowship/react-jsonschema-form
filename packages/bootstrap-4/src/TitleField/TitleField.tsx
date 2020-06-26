@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
+import { FieldProps } from "@rjsf/core";
 
-import { FieldProps } from '@rjsf/core';
+export interface TitleFieldProps extends Partial<FieldProps> {
+  title: string;
+}
 
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
-
-const TitleField = ({ title }: FieldProps) => (
+const TitleField = ({ title }: TitleFieldProps) => (
   <>
-    <Box mb={1} mt={1}>
-      <Typography variant="h5">{title}</Typography>
-      <Divider />
-    </Box>
+    <div className="my-1">
+      <h5>{title}</h5>
+      <hr className="border-0 bg-secondary" style={{ height: "1px" }} />
+    </div>
   </>
 );
 
