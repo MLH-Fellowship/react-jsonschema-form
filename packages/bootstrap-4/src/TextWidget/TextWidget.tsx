@@ -4,7 +4,9 @@ import Form from "react-bootstrap/Form";
 
 import { WidgetProps } from "@rjsf/core";
 
-export type TextWidgetProps = WidgetProps;
+export interface TextWidgetProps extends WidgetProps {
+  type?: string;
+}
 
 const TextWidget = ({
   id,
@@ -36,16 +38,17 @@ const TextWidget = ({
 
   return (
     <Form.Group controlId={id} className="mb-0">
-      <Form.Label>
+      <Form.Label className={rawErrors.length > 0 ? "text-danger" : ""}>
         {label || schema.title}
-        {required ? "*" : null}
+        {(label || schema.title) && required ? "*" : null}
       </Form.Label>
       <Form.Control
         id={id}
         autoFocus={autofocus}
         required={required}
         disabled={disabled || readonly}
-        name={name}
+        className={rawErrors.length > 0 ? "is-invalid" : ""}
+        list={schema.examples ? `examples_${id}` : undefined}
         type={type || (schema.type as string)}
         value={value || value === 0 ? value : ""}
         onChange={_onChange}
@@ -53,6 +56,15 @@ const TextWidget = ({
         onFocus={_onFocus}
         {...textFieldProps}
       />
+      {schema.examples ? (
+        <datalist id={`examples_${id}`}>
+          {(schema.examples as string[])
+            .concat(schema.default ? ([schema.default] as string[]) : [])
+            .map((example: any) => {
+              return <option key={example} value={example} />;
+            })}
+        </datalist>
+      ) : null}
     </Form.Group>
   );
 };
