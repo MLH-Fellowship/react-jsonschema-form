@@ -1,11 +1,11 @@
 import React from "react";
 import { FieldProps } from "@rjsf/core";
 
-export interface TitleFieldProps extends Partial<FieldProps> {
-  title: string;
-}
+// export interface TitleFieldProps extends Partial<FieldProps> {
+//   title: string;
+// }
 
-const TitleField = ({ title }: TitleFieldProps) => (
+const TitleField = ({ title }: FieldProps) => (
   <>
     <div className="my-1">
       <h5>{title}</h5>
