@@ -1,7 +1,6 @@
 import React from "react";
 
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
 
 import ArrayFieldTemplate from "../ArrayFieldTemplate";
 import ErrorList from "../ErrorList";
@@ -17,11 +16,9 @@ const { getDefaultRegistry } = utils;
 const { fields, widgets } = getDefaultRegistry();
 
 const DefaultChildren = () => (
-  <Container fluid>
-    <Button variant="primary" type="submit">
-      Submit
-    </Button>
-  </Container>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
 );
 
 const Theme: ThemeProps = {

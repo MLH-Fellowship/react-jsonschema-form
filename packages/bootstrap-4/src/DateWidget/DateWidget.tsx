@@ -2,12 +2,7 @@ import React from "react";
 import TextWidget, { TextWidgetProps } from "../TextWidget";
 
 const DateWidget = (props: TextWidgetProps) => {
-  return (
-    <TextWidget
-      type="date"
-      {...props}
-    />
-  );
+  return <TextWidget {...props} type="date" />;
 };
 
 export default DateWidget;

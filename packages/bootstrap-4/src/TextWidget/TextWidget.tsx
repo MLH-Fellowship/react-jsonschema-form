@@ -4,7 +4,9 @@ import Form from "react-bootstrap/Form";
 
 import { WidgetProps } from "@rjsf/core";
 
-export type TextWidgetProps = WidgetProps;
+export type TextWidgetProps = WidgetProps & {
+  type?: string;
+};
 
 const TextWidget = ({
   id,
@@ -33,7 +35,6 @@ const TextWidget = ({
   const _onFocus = ({
     target: { value },
   }: React.FocusEvent<HTMLInputElement>) => onFocus(id, value);
-
   return (
     <Form.Group controlId={id} className="mb-0">
       <Form.Label className={rawErrors.length > 0 ? "text-danger" : ""}>
@@ -41,7 +42,6 @@ const TextWidget = ({
         {(label || schema.title) && required ? "*" : null}
       </Form.Label>
       <Form.Control
-        id={id}
         autoFocus={autofocus}
         required={required}
         disabled={disabled || readonly}

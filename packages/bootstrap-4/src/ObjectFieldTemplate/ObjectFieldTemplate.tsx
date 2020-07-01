@@ -31,7 +31,7 @@ const ObjectFieldTemplate = ({
           description={description}
         />
       )}
-      <Container fluid>
+      <Container fluid className="p-0">
         {properties.map((element: any, index: number) => (
           <Row key={index} style={{ marginBottom: "10px" }}>
             <Col xs={12}> {element.content}</Col>

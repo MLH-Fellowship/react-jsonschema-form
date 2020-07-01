@@ -7,13 +7,13 @@ exports[`array fields array 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth"
+    className="form-group"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
     >
       <div
-        className="MuiBox-root MuiBox-root-33"
+        className="MuiBox-root MuiBox-root-29"
       >
         <div
           className="MuiGrid-root MuiGrid-container"
@@ -25,7 +25,7 @@ exports[`array fields array 1`] = `
               className="MuiGrid-root MuiGrid-item"
             >
               <div
-                className="MuiBox-root MuiBox-root-137"
+                className="MuiBox-root MuiBox-root-133"
               >
                 <button
                   className="MuiButtonBase-root MuiButton-root MuiButton-text array-item-add MuiButton-textSecondary"
@@ -69,33 +69,13 @@ exports[`array fields array 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="MuiBox-root MuiBox-root-178"
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    type="submit"
   >
-    <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-      disabled={false}
-      onBlur={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      tabIndex={0}
-      type="submit"
-    >
-      <span
-        className="MuiButton-label"
-      >
-        Submit
-      </span>
-    </button>
-  </div>
+    Submit
+  </button>
 </form>
 `;
 
@@ -106,83 +86,56 @@ exports[`array fields checkboxes 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth"
+    className="form-group"
   >
     <div
-      className="MuiFormControl-root MuiTextField-root"
+      className="form-group"
     >
-      <div
-        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
-        onClick={[Function]}
+      <label
+        className="form-label"
+        htmlFor="root"
+      />
+      <select
+        autoFocus={false}
+        className="custom-select"
+        disabled={false}
+        id="root"
+        multiple={true}
+        name="nodejs"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        value={Array []}
       >
-        <div
-          aria-haspopup="listbox"
-          aria-labelledby=" root"
-          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
-          id="root"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          role="button"
-          tabIndex={0}
+        <option
+          disabled={false}
+          value="a"
         >
-          <span
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "&#8203;",
-              }
-            }
-          />
-        </div>
-        <input
-          autoFocus={false}
-          name="nodejs"
-          onAnimationStart={[Function]}
-          type="hidden"
-          value=""
-        />
-        <svg
-          aria-hidden="true"
-          className="MuiSvgIcon-root MuiSelect-icon"
-          focusable="false"
-          role="presentation"
-          viewBox="0 0 24 24"
+          a
+        </option>
+        <option
+          disabled={false}
+          value="b"
         >
-          <path
-            d="M7 10l5 5 5-5z"
-          />
-        </svg>
-      </div>
+          b
+        </option>
+        <option
+          disabled={false}
+          value="c"
+        >
+          c
+        </option>
+      </select>
     </div>
   </div>
-  <div
-    className="MuiBox-root MuiBox-root-242"
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    type="submit"
   >
-    <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-      disabled={false}
-      onBlur={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      tabIndex={0}
-      type="submit"
-    >
-      <span
-        className="MuiButton-label"
-      >
-        Submit
-      </span>
-    </button>
-  </div>
+    Submit
+  </button>
 </form>
 `;
 
@@ -193,13 +146,13 @@ exports[`array fields fixed array 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth"
+    className="form-group"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
     >
       <div
-        className="MuiBox-root MuiBox-root-179"
+        className="MuiBox-root MuiBox-root-174"
       >
         <div
           className="MuiGrid-root MuiGrid-container"
@@ -211,96 +164,97 @@ exports[`array fields fixed array 1`] = `
               className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
             >
               <div
-                className="MuiBox-root MuiBox-root-180"
+                className="MuiBox-root MuiBox-root-175"
               >
                 <div
                   className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
                 >
                   <div
-                    className="MuiBox-root MuiBox-root-181"
+                    className="MuiBox-root MuiBox-root-176"
                   >
                     <div
-                      className="MuiFormControl-root MuiFormControl-fullWidth"
+                      className="form-group"
                     >
                       <div
-                        className="MuiFormControl-root MuiTextField-root"
-                        registry={
-                          Object {
-                            "ArrayFieldTemplate": [Function],
-                            "FieldTemplate": [Function],
-                            "ObjectFieldTemplate": [Function],
-                            "definitions": Object {},
-                            "fields": Object {
-                              "AnyOfField": [Function],
-                              "ArrayField": [Function],
-                              "BooleanField": [Function],
-                              "DescriptionField": [Function],
-                              "NullField": [Function],
-                              "NumberField": [Function],
-                              "ObjectField": [Function],
-                              "OneOfField": [Function],
-                              "SchemaField": [Function],
-                              "StringField": [Function],
-                              "TitleField": [Function],
-                              "UnsupportedField": [Function],
-                            },
-                            "formContext": Object {},
-                            "rootSchema": Object {
-                              "items": Array [
-                                Object {
-                                  "type": "string",
-                                },
-                                Object {
-                                  "type": "number",
-                                },
-                              ],
-                              "type": "array",
-                            },
-                            "widgets": Object {
-                              "AltDateTimeWidget": [Function],
-                              "AltDateWidget": [Function],
-                              "BaseInput": [Function],
-                              "CheckboxWidget": [Function],
-                              "CheckboxesWidget": [Function],
-                              "ColorWidget": [Function],
-                              "DateTimeWidget": [Function],
-                              "DateWidget": [Function],
-                              "EmailWidget": [Function],
-                              "FileWidget": [Function],
-                              "HiddenWidget": [Function],
-                              "PasswordWidget": [Function],
-                              "RadioWidget": [Function],
-                              "RangeWidget": [Function],
-                              "SelectWidget": [Function],
-                              "TextWidget": [Function],
-                              "TextareaWidget": [Function],
-                              "URLWidget": [Function],
-                              "UpDownWidget": [Function],
-                            },
-                          }
-                        }
+                        className="mb-0 form-group"
                       >
-                        <div
-                          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
-                          onClick={[Function]}
-                        >
-                          <input
-                            aria-invalid={false}
-                            autoFocus={false}
-                            className="MuiInputBase-input MuiInput-input"
-                            disabled={false}
-                            id="root_0"
-                            name="nodejs"
-                            onAnimationStart={[Function]}
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            placeholder=""
-                            required={true}
-                            type="string"
-                            value=""
-                          />
-                        </div>
+                        <label
+                          className="form-label"
+                          htmlFor="root_0"
+                        />
+                        <input
+                          autoFocus={false}
+                          className="form-control"
+                          disabled={false}
+                          id="root_0"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder=""
+                          registry={
+                            Object {
+                              "ArrayFieldTemplate": [Function],
+                              "FieldTemplate": [Function],
+                              "ObjectFieldTemplate": [Function],
+                              "definitions": Object {},
+                              "fields": Object {
+                                "AnyOfField": [Function],
+                                "ArrayField": [Function],
+                                "BooleanField": [Function],
+                                "DescriptionField": [Function],
+                                "NullField": [Function],
+                                "NumberField": [Function],
+                                "ObjectField": [Function],
+                                "OneOfField": [Function],
+                                "SchemaField": [Function],
+                                "StringField": [Function],
+                                "TitleField": [Function],
+                                "UnsupportedField": [Function],
+                              },
+                              "formContext": Object {},
+                              "rootSchema": Object {
+                                "items": Array [
+                                  Object {
+                                    "type": "string",
+                                  },
+                                  Object {
+                                    "type": "number",
+                                  },
+                                ],
+                                "type": "array",
+                              },
+                              "widgets": Object {
+                                "AltDateTimeWidget": [Function],
+                                "AltDateWidget": [Function],
+                                "BaseInput": [Function],
+                                "CheckboxWidget": [Function],
+                                "CheckboxesWidget": [Function],
+                                "ColorWidget": [Function],
+                                "DateTimeWidget": [Function],
+                                "DateWidget": [Function],
+                                "EmailWidget": [Function],
+                                "FileWidget": [Function],
+                                "HiddenWidget": [Function],
+                                "PasswordWidget": [Function],
+                                "RadioWidget": [Function],
+                                "RangeWidget": [Function],
+                                "SelectWidget": [Function],
+                                "TextWidget": [Function],
+                                "TextareaWidget": [Function],
+                                "URLWidget": [Function],
+                                "UpDownWidget": [Function],
+                              },
+                            }
+                          }
+                          required={true}
+                          type="string"
+                          uiSchema={
+                            Object {
+                              "classNames": undefined,
+                            }
+                          }
+                          value=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -315,96 +269,97 @@ exports[`array fields fixed array 1`] = `
               className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
             >
               <div
-                className="MuiBox-root MuiBox-root-215"
+                className="MuiBox-root MuiBox-root-177"
               >
                 <div
                   className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
                 >
                   <div
-                    className="MuiBox-root MuiBox-root-216"
+                    className="MuiBox-root MuiBox-root-178"
                   >
                     <div
-                      className="MuiFormControl-root MuiFormControl-fullWidth"
+                      className="form-group"
                     >
                       <div
-                        className="MuiFormControl-root MuiTextField-root"
-                        registry={
-                          Object {
-                            "ArrayFieldTemplate": [Function],
-                            "FieldTemplate": [Function],
-                            "ObjectFieldTemplate": [Function],
-                            "definitions": Object {},
-                            "fields": Object {
-                              "AnyOfField": [Function],
-                              "ArrayField": [Function],
-                              "BooleanField": [Function],
-                              "DescriptionField": [Function],
-                              "NullField": [Function],
-                              "NumberField": [Function],
-                              "ObjectField": [Function],
-                              "OneOfField": [Function],
-                              "SchemaField": [Function],
-                              "StringField": [Function],
-                              "TitleField": [Function],
-                              "UnsupportedField": [Function],
-                            },
-                            "formContext": Object {},
-                            "rootSchema": Object {
-                              "items": Array [
-                                Object {
-                                  "type": "string",
-                                },
-                                Object {
-                                  "type": "number",
-                                },
-                              ],
-                              "type": "array",
-                            },
-                            "widgets": Object {
-                              "AltDateTimeWidget": [Function],
-                              "AltDateWidget": [Function],
-                              "BaseInput": [Function],
-                              "CheckboxWidget": [Function],
-                              "CheckboxesWidget": [Function],
-                              "ColorWidget": [Function],
-                              "DateTimeWidget": [Function],
-                              "DateWidget": [Function],
-                              "EmailWidget": [Function],
-                              "FileWidget": [Function],
-                              "HiddenWidget": [Function],
-                              "PasswordWidget": [Function],
-                              "RadioWidget": [Function],
-                              "RangeWidget": [Function],
-                              "SelectWidget": [Function],
-                              "TextWidget": [Function],
-                              "TextareaWidget": [Function],
-                              "URLWidget": [Function],
-                              "UpDownWidget": [Function],
-                            },
-                          }
-                        }
+                        className="mb-0 form-group"
                       >
-                        <div
-                          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
-                          onClick={[Function]}
-                        >
-                          <input
-                            aria-invalid={false}
-                            autoFocus={false}
-                            className="MuiInputBase-input MuiInput-input"
-                            disabled={false}
-                            id="root_1"
-                            name="nodejs"
-                            onAnimationStart={[Function]}
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onFocus={[Function]}
-                            placeholder=""
-                            required={true}
-                            type="number"
-                            value=""
-                          />
-                        </div>
+                        <label
+                          className="form-label"
+                          htmlFor="root_1"
+                        />
+                        <input
+                          autoFocus={false}
+                          className="form-control"
+                          disabled={false}
+                          id="root_1"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder=""
+                          registry={
+                            Object {
+                              "ArrayFieldTemplate": [Function],
+                              "FieldTemplate": [Function],
+                              "ObjectFieldTemplate": [Function],
+                              "definitions": Object {},
+                              "fields": Object {
+                                "AnyOfField": [Function],
+                                "ArrayField": [Function],
+                                "BooleanField": [Function],
+                                "DescriptionField": [Function],
+                                "NullField": [Function],
+                                "NumberField": [Function],
+                                "ObjectField": [Function],
+                                "OneOfField": [Function],
+                                "SchemaField": [Function],
+                                "StringField": [Function],
+                                "TitleField": [Function],
+                                "UnsupportedField": [Function],
+                              },
+                              "formContext": Object {},
+                              "rootSchema": Object {
+                                "items": Array [
+                                  Object {
+                                    "type": "string",
+                                  },
+                                  Object {
+                                    "type": "number",
+                                  },
+                                ],
+                                "type": "array",
+                              },
+                              "widgets": Object {
+                                "AltDateTimeWidget": [Function],
+                                "AltDateWidget": [Function],
+                                "BaseInput": [Function],
+                                "CheckboxWidget": [Function],
+                                "CheckboxesWidget": [Function],
+                                "ColorWidget": [Function],
+                                "DateTimeWidget": [Function],
+                                "DateWidget": [Function],
+                                "EmailWidget": [Function],
+                                "FileWidget": [Function],
+                                "HiddenWidget": [Function],
+                                "PasswordWidget": [Function],
+                                "RadioWidget": [Function],
+                                "RangeWidget": [Function],
+                                "SelectWidget": [Function],
+                                "TextWidget": [Function],
+                                "TextareaWidget": [Function],
+                                "URLWidget": [Function],
+                                "UpDownWidget": [Function],
+                              },
+                            }
+                          }
+                          required={true}
+                          type="number"
+                          uiSchema={
+                            Object {
+                              "classNames": undefined,
+                            }
+                          }
+                          value=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -416,35 +371,12 @@ exports[`array fields fixed array 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="MuiBox-root MuiBox-root-217"
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    type="submit"
   >
-    <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-      disabled={false}
-      onBlur={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      tabIndex={0}
-      type="submit"
-    >
-      <span
-        className="MuiButton-label"
-      >
-        Submit
-      </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
-    </button>
-  </div>
+    Submit
+  </button>
 </form>
 `;
