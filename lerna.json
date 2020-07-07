@@ -1,11 +1,11 @@
 {
   "packages": [
     "packages/core",
-    
+
     "packages/bootstrap-4",
-    
+
     "packages/material-ui",
-    
+
     "packages/playground"
   ],
   "version": "2.2.0"
