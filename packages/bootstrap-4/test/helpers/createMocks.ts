@@ -15,6 +15,7 @@ export function makeWidgetMockProps(
 ): WidgetProps {
   return {
     uiSchema: {},
+    type: "",
     schema: mockSchema,
     required: true,
     disabled: false,

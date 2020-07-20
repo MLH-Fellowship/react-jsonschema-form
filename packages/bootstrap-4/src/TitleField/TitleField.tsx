@@ -5,7 +5,7 @@ import { FieldProps } from "@rjsf/core";
 //   title: string;
 // }
 
-const TitleField = ({ title }: FieldProps) => (
+const TitleField = ({ title }: Partial<FieldProps>) => (
   <>
     <div className="my-1">
       <h5>{title}</h5>
