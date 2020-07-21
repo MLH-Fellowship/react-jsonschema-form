@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2.0.0
+      uses: actions/setup-node@v2.1.0
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
@@ -36,13 +36,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 13.x
+<<<<<<< HEAD
       uses: actions/setup-node@v2.0.0
+=======
+      uses: actions/setup-node@v2.1.0
+>>>>>>> upstream/master
       with:
         node-version: 13.x
     - run: npm install
     - run: npm run build
     - name: Deploy playground to GitHub Pages
+<<<<<<< HEAD
       uses: crazy-max/ghaction-github-pages@v2.1.0
+=======
+      uses: crazy-max/ghaction-github-pages@v2.1.1
+>>>>>>> upstream/master
       with:
         keep_history: true
         target-branch: gh-pages
@@ -57,7 +65,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup Python
+<<<<<<< HEAD
       uses: actions/setup-python@v2.0.1
+=======
+      uses: actions/setup-python@v2.1.0
+>>>>>>> upstream/master
       with:
         python-version: 3.6
     - run: pip install -r requirements.docs.txt

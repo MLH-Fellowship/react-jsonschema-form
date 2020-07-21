@@ -418,6 +418,8 @@ declare module '@rjsf/core' {
             options: JSONSchema7[],
             definitions: FieldProps['registry']['definitions'],
         ): number;
+
+        export function schemaRequiresTrueValue(schema: JSONSchema7): boolean;
     }
 }
 
